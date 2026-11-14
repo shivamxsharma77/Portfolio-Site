@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shivam Sharma — Web Developer Portfolio</title>
+<meta name="description" content="Portfolio of Shivam Sharma, a BCA student and web developer focused on building modern, responsive, and engaging digital experiences." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Shivam Sharma — Web Developer Portfolio" />
+<meta property="og:description" content="Portfolio of Shivam Sharma, a BCA student and web developer focused on building modern, responsive, and engaging digital experiences." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23e5384a%22>S</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__mark">SS</div>
+  <div class="loader__name">SHIVAM SHARMA</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor__dot"></div>
+  <div class="cursor__ring"></div>
+</div>
+
+<!-- ============ BACKGROUND ============ -->
+<div class="bg" aria-hidden="true">
+  <div class="bg__grid"></div>
+  <div class="bg__glow bg__glow--a"></div>
+  <div class="bg__glow bg__glow--b"></div>
+  <div class="bg__noise"></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <nav class="nav__inner">
+    <a href="#home" class="nav__brand" aria-label="Shivam Sharma — home">
+      <span class="nav__brand-mono">SS</span>
+      <span class="nav__brand-full">Shivam&nbsp;Sharma</span>
+    </a>
+
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home" class="nav__link">Home</a></li>
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#resume" class="nav__link">Resume</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__content reveal">
+        <p class="hero__eyebrow">BCA Student · Web Developer · Builder</p>
+        <h1 class="hero__title">
+          Hi, I'm <span class="hero__title-accent">Shivam Sharma.</span>
+        </h1>
+        <p class="hero__statement">I build digital experiences that look as good as they work.</p>
+        <p class="hero__desc">
+          A BCA student passionate about web development, creative digital experiences,
+          and building modern applications with clean, functional interfaces — and
+          exploring data analysis with the help of AI.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary magnetic">View My Work</a>
+          <a href="assets/Shivam_Sharma_Resume.pdf" class="btn btn--ghost magnetic" download>Download Resume</a>
+        </div>
+
+        <a href="#contact" class="hero__connect">Let's Connect <span aria-hidden="true">→</span></a>
+
+        <div class="hero__status">
+          <span class="hero__status-dot"></span>
+          Open to opportunities
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" id="hero-visual" aria-hidden="true">
+        <svg class="hero__orb" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="orbGlow" cx="50%" cy="45%" r="60%">
+              <stop offset="0%" stop-color="#e5384a" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#e5384a" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e5384a" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#6a6ee0" stop-opacity="0.4"/>
+            </linearGradient>
+          </defs>
+          <circle cx="240" cy="240" r="180" fill="url(#orbGlow)"/>
+          <g stroke="url(#lineGrad)" stroke-width="1" fill="none" opacity="0.85">
+            <ellipse cx="240" cy="240" rx="150" ry="150" />
+            <ellipse cx="240" cy="240" rx="150" ry="60" />
+            <ellipse cx="240" cy="240" rx="150" ry="105" transform="rotate(35 240 240)"/>
+            <ellipse cx="240" cy="240" rx="150" ry="105" transform="rotate(-35 240 240)"/>
+            <circle cx="240" cy="240" r="95" />
+            <circle cx="240" cy="240" r="60" stroke-opacity="0.5"/>
+          </g>
+          <g class="hero__orb-dots" fill="#e5384a">
+            <circle cx="240" cy="90" r="3.5"/>
+            <circle cx="390" cy="240" r="3"/>
+            <circle cx="240" cy="390" r="3"/>
+            <circle cx="90" cy="240" r="3"/>
+            <circle cx="345" cy="130" r="2.5" fill="#8b8ef0"/>
+            <circle cx="135" cy="350" r="2.5" fill="#8b8ef0"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll to explore">
+      <span>Scroll to explore</span>
+      <span class="hero__scroll-arrow">↓</span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-inner about__grid">
+      <div class="about__text reveal">
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-title">A little about me.</h2>
+        <p class="about__p">
+          I'm Shivam Sharma, a BCA student with a strong interest in web development and technology.
+          I enjoy turning ideas into functional, visually engaging digital experiences.
+        </p>
+        <p class="about__p">
+          I focus on creating websites and applications that balance aesthetics, usability,
+          performance, and clean implementation. I'm constantly learning new technologies and
+          improving my ability to build real-world projects.
+        </p>
+        <p class="about__p">
+          Alongside web development, I'm starting to explore data analysis with the help of AI tools —
+          learning how to turn raw data into useful insights.
+        </p>
+      </div>
+
+      <div class="about__card reveal" aria-label="Quick facts">
+        <div class="about__card-row">
+          <span class="about__card-label">Name</span>
+          <span class="about__card-value">Shivam Sharma</span>
+        </div>
+        <div class="about__card-row">
+          <span class="about__card-label">Education</span>
+          <span class="about__card-value">Bachelor of Computer Applications</span>
+        </div>
+        <div class="about__card-row">
+          <span class="about__card-label">Location</span>
+          <span class="about__card-value">New Delhi, Delhi</span>
+        </div>
+        <div class="about__card-row">
+          <span class="about__card-label">Focus</span>
+          <span class="about__card-value">Web Development &amp; Data Analysis with AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">Skills</p>
+      <h2 class="section-title">Skills &amp; technologies.</h2>
+
+      <div class="skills__tabs" role="tablist" aria-label="Skill categories">
+        <button class="skills__tab is-active" role="tab" aria-selected="true" data-category="frontend">Frontend</button>
+        <button class="skills__tab" role="tab" aria-selected="false" data-category="programming">Programming</button>
+        <button class="skills__tab" role="tab" aria-selected="false" data-category="tools">Tools &amp; Technologies</button>
+      </div>
+
+      <div class="skills__grid" id="skills-grid"><!-- injected by script.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <!-- Project content (name, description, GitHub link, screenshot) is edited in script.js → PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow">Work</p>
+      <h2 class="section-title">Selected projects.</h2>
+      <p class="section-subtitle">A collection of things I've designed, built, and experimented with.</p>
+
+      <article class="featured reveal" id="featured-project"><!-- injected by script.js --></article>
+
+      <div class="projects__grid" id="projects-grid"><!-- more projects appear here when added --></div>
+    </div>
+  </section>
+
+  <!-- ============ RESUME ============ -->
+  <section class="resume" id="resume">
+    <div class="section-inner resume__card reveal">
+
+      <!-- =====================================================================
+           >>>>>>>>>>>>>>>>>>>>>>  PHOTO HERE  <<<<<<<<<<<<<<<<<<<<<<
+           1. Save your photo as  assets/shivam.jpg
+           2. Remove the comment markers around the <img> line below
+           3. Delete the <div class="resume__photo-placeholder"> line
+           ===================================================================== -->
+      <div class="resume__photo">
+        <img src="assets/shivam.jpg" alt="Portrait of Shivam Sharma" loading="lazy" />
+        
+      </div>
+      <!-- ======================= END PHOTO SLOT ======================= -->
+
+      <div class="resume__main">
+        <div>
+          <p class="section-eyebrow">Resume</p>
+          <h2 class="section-title">More than a portfolio.<br />Here's the full story.</h2>
+          <p class="resume__text">
+            Want the complete overview of my education, skills, projects, and experience?
+          </p>
+        </div>
+
+        <!-- =====================================================================
+             >>>>>>>>>>>>>>>>>>>>>>  DOWNLOAD CV / VIEW CV  <<<<<<<<<<<<<<<<<<<<<<
+             Both buttons open  assets/Shivam_Sharma_Resume.pdf
+             Put your real resume in the assets folder with that exact name.
+             ===================================================================== -->
+        <div class="resume__actions">
+          <a href="assets/Shivam_Sharma_Resume.pdf" class="btn btn--primary magnetic" download>Download CV</a>
+          <a href="assets/Shivam_Sharma_Resume.pdf" class="btn btn--ghost magnetic" target="_blank" rel="noopener">View CV</a>
+        </div>
+        <!-- ======================= END CV BUTTONS ======================= -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="education" id="education">
+    <div class="section-inner">
+      <p class="section-eyebrow">Education</p>
+      <h2 class="section-title">Timeline.</h2>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Bachelor of Computer Applications</h3>
+            <p class="timeline__meta">CGPA: 8.0 · New Delhi, Delhi</p>
+            <p class="timeline__date">2024 — 2027</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="experience" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow">Experience</p>
+      <h2 class="section-title">Achievements &amp; experience.</h2>
+      <div class="experience__empty reveal">
+        <p>Currently building, learning, and working on new projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-inner contact__center reveal">
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-title">Let's build something.</h2>
+      <p class="contact__text">
+        Have an opportunity, project idea, or just want to connect? I'd love to hear from you.
+      </p>
+
+      <a href="mailto:shivamxsharma77@gmail.com" class="contact__email">shivamxsharma77@gmail.com</a>
+
+      <div class="contact__socials">
+        <a href="mailto:shivamxsharma77@gmail.com" class="contact__social" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3z" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6"/></svg>
+          Email
+        </a>
+        <a href="https://github.com/shivamxsharma77" class="contact__social" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/shivam-sharma-928740384" class="contact__social" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88zM4.5 21h4.9V9.5H4.5V21zm7.6-11.5h4.7v1.6h.06c.66-1.16 2.27-2.38 4.67-2.38 5 0 5.92 3.02 5.92 6.95V21h-4.9v-6.35c0-1.51-.03-3.46-2.34-3.46-2.34 0-2.7 1.62-2.7 3.35V21h-4.9V9.5z" fill="currentColor"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer__inner">
+    <div class="footer__brand">Shivam Sharma</div>
+
+    <div class="footer__links">
+      <a href="https://github.com/shivamxsharma77" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/shivam-sharma-928740384" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:shivamxsharma77@gmail.com">Email</a>
+    </div>
+
+    <a href="#top" class="footer__top">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+  <div class="section-inner footer__legal">© 2026 Shivam Sharma. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
